@@ -1,0 +1,469 @@
+/*
+Reglas de la base de datos
+1- no usar mayusuculas en los nombres de entidades, atributos ni descripciones
+2- guardarlo en un sqript (archivo de mysql)
+*/
+
+drop database if exists documentacionevidencia;
+create database documentacionevidencia;
+use documentacionevidencia;
+
+/*TABLAS*/
+create table roles(
+idrol int primary key auto_increment ,
+descripcion varchar(80) not null unique
+);
+
+create table usuarios(
+idusuario int primary key auto_increment,
+nombre varchar(80) not null unique,
+credencial varchar(250) not null,
+idrol int not null,
+estado int, -- estado 1 = activo; estado 2 = suspendido
+telefono varchar(20),
+foreign key (idrol) references roles(idrol)
+);
+-- para guardar la direccion de las llaves publicas y privadas para cada usuario
+alter table usuarios add llavepublica varchar(200);
+alter table usuarios add llaveprivada varchar(200);
+
+create table cadenasdecustodias
+(
+idcadenadecustodia int primary key auto_increment,
+nombre varchar(120) unique,
+descripcion varchar(120),
+idusuario int,
+Cantidad_de_docs int default 0,
+foreign key (idusuario) references usuarios(idusuario)
+);
+create table documentos(
+iddocumento int primary key auto_increment,
+comentarios varchar(250),
+idcadenadecustodia int,
+destacado int,
+direccion varchar(300),
+foreign key (idcadenadecustodia) references cadenasdecustodias(idcadenadecustodia)
+);
+/* -- TABLAS CADUCADAS DE COMPARTIR CADENAS Y DOCUMENTOS	
+create table cadenascompartidas
+(
+idcadenacompartida int primary key auto_increment,
+idcadenadecustodia int,
+idusuario int,
+foreign key (idcadenadecustodia) references cadenasdecustodias(idcadenadecustodia),
+foreign key (idusuario) references usuarios (idusuario)
+);
+
+create table documentoscompartidos
+(
+iddocumentocompartido int primary key auto_increment,
+iddocumento int,
+idusuario int,
+foreign key (iddocumento) references documentos(iddocumento),
+foreign key (idusuario) references usuarios (idusuario)
+);
+*/
+
+
+/*TABLA DE PERMISOS CADUCADA*/
+/*
+create table permisos(
+idpermiso int primary key auto_increment,
+documentar int, -- 2
+gestionarusuarios int, -- 3 
+gestionarroles int, -- 4
+gestionardocumentos int, -- 5
+gestionarsusdocumentos int, -- 6
+gestionarsuscadenasdecustodias int, -- 7
+cambiarcredencial int, -- 8
+versuinformacion int, -- 9
+suspendersucuenta int,  -- 10
+suspendercuentas int, -- 11
+solovercadenasdecustodia int, -- 12 --
+agregacadenadecustodia int, -- 13
+eliminarcadenadecustodia int, -- 14
+modificarcadenadecustodia int, -- 15
+agregardocumentos int, -- 16
+modificardocumentos int, -- 17
+eliminardocumentos int , -- 18
+idrol int,
+foreign key (idrol) references roles (idrol)
+);
+/*para el rol 2 (sin el id de permisos) es 1,0,0,0,1,1,1,1,1,0 */
+/*NOTA: 
+cuando un permiso este en 1 es por que esta activo, si es 0, esta inactivo ese permiso
+*/
+
+create table permisos(
+idpermiso int primary key auto_increment,
+soloverproyectos int, 
+verproyectosajenos int,
+suspendercuenta int,
+cambiarcredencial int,
+crearevidencias int,
+gestionarusuarios int,
+gestionarroles int,
+crearproyectos int,
+compartirproyectos int,
+compartirevidencias int,
+idrol int,
+foreign key (idrol) references roles(idrol)
+);
+
+create table proyectos(
+idproyecto int primary key auto_increment,
+titulo varchar(80) unique,
+descripcion varchar(120),
+idusuario int,
+cantidad_de_evidencias int default 0,
+foreign key (idusuario) references usuarios(idusuario)
+);
+
+create table tiposdeevidencias(
+idtipoevidencia int primary key auto_increment,
+tipo varchar (80),
+caracteristica varchar(80),
+formato  varchar(50),
+extension varchar(10)
+);
+
+create table evidencias (
+idevidencia int primary key auto_increment,
+idproyecto int , 
+idtipoevidencia int, 
+dia int,
+mes int,
+anio int,
+hora int,
+minutos int,
+idusuario int (20),
+hash varchar(120),
+nota varchar(800),
+ruta varchar(120),
+foreign key (idproyecto) references proyectos(idproyecto),
+foreign key (idtipoevidencia) references tiposdeevidencias(idtipoevidencia)
+);
+alter table evidencias add hashactual varchar(250);
+
+create table pasosescenarios(
+idpaso int primary key auto_increment,
+titulo varchar(120),
+idusuario int,
+foreign key (idusuario) references usuarios (idusuario)
+);
+
+/*FIN DE TABLAS*/
+
+
+create table proyectoscompartidos
+(
+idproyectocompartido int primary key auto_increment,
+idproyecto int,
+idusuario int,
+foreign key (idproyecto) references proyectos(idproyecto),
+foreign key (idusuario) references usuarios (idusuario)
+);
+
+create table evidenciascompartidas
+(
+idevidenciacompartida int primary key auto_increment,
+idevidencia int,
+idusuario int,
+foreign key (idevidencia) references evidencias(idevidencia),
+foreign key (idusuario) references usuarios (idusuario)
+);
+
+
+create table escenarios(
+idescenario int primary key auto_increment,
+titulo varchar(120),
+notas varchar(150),
+pasoactual int,
+idusuario int,
+foreign key (idusuario) references usuarios(idusuario)
+);
+
+/*TRIGGERS*/ 
+
+/*Aqui inician los triggers el primeor es para aumentar la cantidad de docs en cadenas de custodias*/
+drop trigger if exists before_documents_insert;
+  delimiter //
+  create trigger before_documents_insert
+  before insert
+  on documentos
+  for each row
+  begin
+  update cadenasdecustodias set Cantidad_de_docs=cadenasdecustodias.Cantidad_de_docs+1
+  where new.idcadenadecustodia=cadenasdecustodias.idcadenadecustodia;
+  end //
+  delimiter ;
+  
+  
+   /*trigger para disminuir la cantidad de docs al eliminar un doc*/
+   drop trigger if exists before_documents_delete;
+  delimiter //
+  create trigger before_documents_delete
+  before delete
+  on documentos
+  for each row
+  begin
+  update cadenasdecustodias set Cantidad_de_docs=cadenasdecustodias.Cantidad_de_docs-1
+  where old.idcadenadecustodia=cadenasdecustodias.idcadenadecustodia;
+  end //
+  delimiter ;
+  delete from documentos where iddocumento=3;
+
+/*FIN DE TRIGGERS*/
+
+
+/*TRIGGERS EVIDENCIAS*/ 
+ -- select * from evidencias;
+/*Aqui inician los triggers el primeor es para aumentar la cantidad de docs en cadenas de custodias*/
+drop trigger if exists before_evidencias_insert;
+  delimiter //
+  create trigger before_evidencias_insert
+  before insert
+  on evidencias
+  for each row
+  begin
+  update proyectos set cantidad_de_evidencias=proyectos.cantidad_de_evidencias+1
+  where new.idproyecto=proyectos.idproyecto;
+  end //
+  delimiter ;
+  
+  
+   /*trigger para disminuir la cantidad de docs al eliminar un doc*/
+   drop trigger if exists before_evidencias_delete;
+  delimiter //
+  create trigger before_evidencias_delete
+  before delete
+  on evidencias
+  for each row
+  begin
+  update proyectos set cantidad_de_evidencias=proyectos.cantidad_de_evidencias-1
+  where old.idproyecto=proyectos.idproyecto;
+  end //
+  delimiter ;
+  -- delete from evidencias where idevidencia=3;
+
+/*FIN DE TRIGGERS EVIDENCIAS*/
+
+
+  -- select * from usuarios;
+
+insert into roles values (null,"administrador"),(null,"Tecnico"),(null,"Modificado");
+insert into usuarios  values (null, 1,sha1("1"),1,1,"76501212",null,null),(null, "Tatiana",sha1("1"),2,1,"22505152",null,null),(null, "2",sha1("2"),2,0,"78665439",null,null),
+(null, "3",sha1("3"),3,1,"76898787",null,null);
+
+ insert into cadenasdecustodias (idcadenadecustodia,nombre,descripcion,idusuario) values (null, "Cadena 1", "descripcion ejemplo", 1),(null, "Cadena 2", "descripcion ejemplo", 1),(null, "Cadena 3", "descripcion ejemplo3", 1),(null, "Cadena de Tatiana", "Tetrabal A51", 2),(null, "Cadena de Tatiana 2", "El Chapo 2.0", 2);
+insert into documentos values (null, "documento 1 cadena 1", 1, 1, null),(null, "documento 2 cadena 1", 1, 1,null),(null, "documento 3 cadena 1", 1, 1,null),
+(null, "documento 1 cadena 2", 2, 1, null),(null, "documento 2 cadena 2", 2, 1, null);
+insert into documentos values (null, "documento 2 cadena 2", 3, 1, null),(null, "Area 51", 4, 1, "C:/Users/Kevin/Desktop/fiesta imagen cierre negro.jpg");
+ insert into proyectos (idproyecto,titulo,descripcion,idusuario) values (null,"proyecto de usuario1", "nose",1),
+ (null,"proyecto de usuario2", "segundo ejemplo",2),(null,"proyecto de usuario 2", "tercer ejemplo",2),(null,"proyecto 2 de usuario 2", "cuarto ejemplo",2);
+ insert into tiposdeevidencias values (null,"nose","nose","nose",".ico");
+ insert into evidencias values (null,1,"1",3,3,2022,12,00,"1","nose","primera nota","",null),(null,1,"1",3,3,2022,12,00,"1","segundo ejemplo proyecto 1","segunda nota","",null),
+ (null,2,"1",3,3,2022,12,00,2,"proyecto 2 ejemplo 1","tercera nota","",null);
+ 
+  select * from permisos;
+ 
+ insert into permisos values (null,0,1,0,1,1,1,1,1,1,1,1); -- este es para el rol 1
+insert into permisos values  (null,0,0,1,1,1,0,0,1,1,1,2); -- este es para el rol 2
+insert into permisos values  (null,1,0,0,1,1,0,0,1,1,1,3); -- este es para el rol 3
+
+/* 1-IDPERMISO 2-documentar 3- gestionarusuarios, 4-gestionarroles, 5-gestionardocumentos, 6-gestionarsusdocumentos
+7-gestionarsuscadenasdecustodia 8-cambiarcredencial, 9-versuinformacion, 10-suspendersucuenta
+11- suspendercuentas 12-solovercadenasdecustodia 13-agregacadenadecustodia 14- eliminarcadenadecustodia
+ 15- modificarcadenadecustodia 16-agregardocumentos 17- modificardocumentos
+ 18- eliminardocumentos,19- compartirproyectos, 20-compartirevidencias 21- idrol
+*/
+
+select * from permisos;
+insert into proyectoscompartidos values (null,1,2),(null,3,3),(null,4,3);
+insert into evidenciascompartidas values (null,1,2);
+select * from evidenciascompartidas;
+select * from proyectoscompartidos;
+-- select * from permisos;
+-- consultas especiales
+/*CONSULTA DE TODOS LOS PROYECTOS COMPARTIDOS*/
+/*
+select pc.idproyectocompartido,pc.idproyecto,p.titulo as nombre_del_proyecto,
+ pc.idusuario as usuario_compartido,p.idusuario as usuario_original
+ from proyectoscompartidos pc, proyectos p, usuarios u
+ where pc.idproyecto=p.idproyecto and p.idusuario=u.idusuario group by pc.idproyecto;
+
+*/
+ 
+ /*CONSULTA DE TODOS LOS PROYECTOS COMPARTIDOS CON EL USUARIO ACTUAL*/
+ select pc.idproyectocompartido,pc.idproyecto,p.titulo as nombre_del_proyecto,
+ pc.idusuario as usuario_compartido,p.idusuario as usuario_original
+ from proyectoscompartidos pc, proyectos p, usuarios u
+ where pc.idproyecto = p.idproyecto and pc.idusuario = u.idusuario and u.idusuario = 3;
+ 
+ /*CONSULTA DE ESTADO DE DOCUMENTOS COMPARTIDOS POR MI USUARIO*/
+ select pc.idproyectocompartido,pc.idproyecto,p.titulo as nombre_del_proyecto,
+ pc.idusuario as usuario_compartido,p.idusuario as usuario_original
+ from proyectoscompartidos pc, proyectos p, usuarios u
+ where pc.idproyecto = p.idproyecto and pc.idusuario = u.idusuario and p.idusuario = 2;
+-- para gestion de usuario en el dtgv multitabla
+/*
+select u.idusuario, u.nombre, u.idrol, r.descripcion  from usuarios u, roles r where u.idrol = r.idrol;
+*/
+-- multitabla para dgtv para gestion de cadena de custodia
+ /*
+ select  c.idcadenadecustodia, c.nombre, c.descripcion, c.idusuario, u.nombre
+ from cadenasdecustodias c, usuarios u
+ where c.idusuario = u.idusuario;
+ */
+ 
+ -- consulta documentos con su cadena de custodia CHOCO
+ /*
+ select d.iddocumento as numero_de_documento,d.destacado, c.idcadenadecustodia as idcadenadecustodia, 
+c.nombre as nombrecadena, u.idusuario as idusuario, u.nombre as nombreusuario, 
+r.idrol as rolusuario
+from documentos d, cadenasdecustodias c, usuarios u, roles r
+where c.idcadenadecustodia = d.idcadenadecustodia and
+u.idusuario= c.idusuario and r.idrol = u.idrol; 
+*/
+
+-- select * from cadenasdecustodias;
+-- select  * from documentos where idcadenadecustodia = 1;
+
+-- consulta de cada id por separado para el idrol 2
+/*select  c.idcadenadecustodia, c.nombre, c.descripcion, c.idusuario, u.nombre
+ from cadenasdecustodias c, usuarios u
+ where c.idusuario = u.idusuario and u.idusuario = 2;
+*/
+ 
+ -- update documentos set destacado = "1" , comentarios = "nose ", idcadenadecustodia = "1", 
+ -- direccion = "C:/Users/Kevin/Desktop/fiesta imagen cierre negro.jpg" where iddocumento = "8";
+-- select * from cadenasdecustodias;
+
+
+-- update cadenasdecustodias set Cantidad_de_docs=Cantidad_de_docs+1 where idcadenadecustodia = 1;
+/* Aqui en lugar del idcadenacustodia = 1 en lugar del 1 iria el id de la cadena a la que pertenecera*/
+
+-- consulta de cada id por separado para el idrol 2
+/*select  c.idcadenadecustodia, c.nombre, c.descripcion, c.idusuario, u.nombre
+ from cadenasdecustodias c, usuarios u
+ where c.idusuario = u.idusuario and u.idusuario = 2;
+*/
+ 
+ -- select * from cadenascompartidas;
+ -- solo cadenas compartias
+ /*
+ select  c.idcadenadecustodia, c.nombre, c.descripcion, c.idusuario, u.nombre
+ from cadenasdecustodias c, usuarios u, cadenascompartidas cc
+ where c.idusuario = u.idusuario and u.idusuario = 2 or c.idcadenadecustodia = (select idcadenadecustodia from cadenascompartidas where idusuario = 2 );
+ */
+ /*
+  insert into documentos
+  values(null,"probando3",1,1,"prueba");
+  select * from cadenasdecustodias;
+   select * from documentos; 
+ */
+--  update documentos set destacado = "1" , comentarios = "nose ", idcadenadecustodia = "1", 
+--  direccion = "C:/Users/Kevin/Desktop/fiesta imagen cierre negro.jpg" where iddocumento = "8";
+-- select * from permisos;
+ -- use documentacionevidencia;
+-- select * from cadenasdecustodias;
+-- delete from usuarios where idusuario = 5;
+-- update cadenasdecustodias set idusuario = 1 where idusuario = 7;
+
+/*select *, if (documentar = 1, 'permitido','no permitido'),
+( gestionarusuarios = 1, 'permitido','no permitido'), if (gestionarroles = 1, 'permitido','no permitido'),
+( gestionardocumentos = 1, 'permitido','no permitido'), if (gestionarsusdocumentos = 1, 'permitido','no permitido'),
+( gestionarsuscadenasdecustodias = 1, 'permitido','no permitido'), if (cambiarcredencial = 1, 'permitido','no permitido'),
+( versuinformacion = 1, 'permitido','no permitido'), if (suspedersucuenta = 1, 'permitido','no permitido'),
+( suspendercuenta = 1, 'permitido','no permitido') from permisos; */
+
+/*
+select *, if (documentar = 1, 'permitido','no permitido') as documentar2,
+( gestionarusuarios = 1, 'permitido','no permitido') as gestionarusuarios2, if (gestionarroles = 1, 'permitido','no permitido') as gestionarroles2,
+( gestionardocumentos = 1, 'permitido','no permitido') as gestionardocumentos2, if (gestionarsusdocumentos = 1, 'permitido','no permitido') as gestionarsusdocumentos2,
+( gestionarsuscadenasdecustodias = 1, 'permitido','no permitido') as gestionarsuscadenasdecustodias2, if (cambiarcredencial = 1, 'permitido','no permitido') as cambiarcredencial2,
+( versuinformacion = 1, 'permitido','no permitido') as versuinformacion2, if (suspedersucuenta = 1, 'permitido','no permitido') as suspedersucuenta2,
+( suspendercuenta = 1, 'permitido','no permitido') as suspendercuenta2 from permisos;
+
+*/
+
+/*CONSULTA PARA VER LOS ROLES DE ESE USUARIO*/
+/*
+select * from permisos;
+select p.*
+from permisos p, roles r
+where r.idrol = p.idrol and p.idrol = 2;
+*/
+-- select * from proyectos;
+
+/* VER LA EVIDENCIA DEL PROYECTO SELECCIONADO*/
+/*
+Select e.idevidencia, e.idproyecto, e.idtipoevidencia, e.fecha, e.hora, e.idusuario, e.hash
+from evidencias e, proyectos p
+where e.idproyecto = p.idproyecto and p.idproyecto = 2;
+*/
+
+/*VER LOS PROYECTOS DE SOLO EL USUARIO CREADOR*/
+/*
+select *
+from proyectos
+where idusuario = 2;
+*/
+
+
+/*VER LA DESCRIPCION DEL ROL ACTUAL*/
+/*
+select descripcion 
+from roles 
+ where idrol = (select idrol from usuarios where idusuario = 4);
+ */
+ 
+ -- select * from permisos;
+ 
+ /*VER EL PROYECTO AJENO COMPARTIDO CONMIGO, CONSULTA*/
+-- select verproyectosajenos from permisos where idrol = 3;
+
+/*CONSULTAR SI EL DOCUMENTO COMPARTIDO YA ESTABA HECHO ANTES */
+select idproyecto, idusuario from proyectoscompartidos where idusuario = 2;
+
+/*CONSULTAR PERMISOS CON LA DESCRIPCION DEL ROL*/
+select p.idpermiso, r.descripcion, p.idrol
+from permisos p, roles r
+where p.idrol = r.idrol;
+
+/*CONSULTAR LA LISTA DE PERMISOS DEL USUARIO CON SU ROL ACTUAL*/
+select p.*
+from permisos p, roles r
+where r.idrol = p.idrol and p.idrol = 3;
+
+select * from proyectos;
+/*seleccion para ver todas las evidencias del usaurio tal */
+select u.nombre as nombre_usuario_creador, p.titulo as titulo_proyecto, e.idevidencia, te.tipo, e.dia, e.mes, e.anio , e.hora, e.minutos, e.hash, e.nota
+ from evidencias e, tiposdeevidencias te, proyectos p, usuarios u
+ where e.idproyecto = p.idproyecto and e.idtipoevidencia = te.idtipoevidencia and u.idusuario = p.idusuario and u.idusuario =2;
+ 
+ /*consulta de proyectos compartidos conmigo*/
+ select * from proyectoscompartidos;
+ select pc.idproyectocompartido, p.titulo, p.descripcion, (select nombre from usuarios where idusuario = p.idusuario) as nombre_usuario_propietario, u.nombre
+ from proyectoscompartidos pc, proyectos p, usuarios u
+ where pc.idproyecto = p.idproyecto and u.idusuario = pc.idusuario and u.idusuario = 2;
+ 
+ /*consulta de mis proyectos compartidos*/
+ 
+ select pc.idproyectocompartido, p.idproyecto, p.titulo, p.descripcion, (select nombre from usuarios where idusuario = pc.idusuario) as usuario_compartido, u.nombre as usuario_propietario
+ from usuarios u, proyectos p, proyectoscompartidos pc
+ where u.idusuario = p.idusuario and pc.idproyecto = p.idproyecto and u.idusuario = 1;
+ 
+ /*Seleccion de proyectos */
+ select p.* , u.nombre as nombre_usuario
+ from usuarios u, proyectos p
+ where u.idusuario = p.idusuario and p.idusuario =1;
+
+select * from escenarios;
+
+select r.*, p.idpermiso
+from permisos p, roles r
+where p.idrol = r.idrol;
+select * from roles;
+
+select * from usuarios;

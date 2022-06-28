@@ -1,0 +1,2 @@
+D:\proyectotesis\Docvid\General\obj\Release\General.csprojAssemblyReference.cache
+D:\proyectotesis\Docvid\General\obj\Release\General.csproj.CoreCompileInputs.cache

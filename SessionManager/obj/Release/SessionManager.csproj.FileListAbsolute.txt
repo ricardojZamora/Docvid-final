@@ -1,0 +1,6 @@
+D:\proyectotesis\Docvid\SessionManager\bin\Release\SessionManager.dll
+D:\proyectotesis\Docvid\SessionManager\bin\Release\SessionManager.pdb
+D:\proyectotesis\Docvid\SessionManager\obj\Release\SessionManager.csprojAssemblyReference.cache
+D:\proyectotesis\Docvid\SessionManager\obj\Release\SessionManager.csproj.CoreCompileInputs.cache
+D:\proyectotesis\Docvid\SessionManager\obj\Release\SessionManager.dll
+D:\proyectotesis\Docvid\SessionManager\obj\Release\SessionManager.pdb

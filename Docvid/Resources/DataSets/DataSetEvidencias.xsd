@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetEvidencias" targetNamespace="http://tempuri.org/DataSetEvidencias.xsd" xmlns:mstns="http://tempuri.org/DataSetEvidencias.xsd" xmlns="http://tempuri.org/DataSetEvidencias.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetEvidencias" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetEvidencias" msprop:Generator_UserDSName="DataSetEvidencias">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tiposdeevidencias" msprop:Generator_TableClassName="tiposdeevidenciasDataTable" msprop:Generator_TableVarName="tabletiposdeevidencias" msprop:Generator_TablePropName="tiposdeevidencias" msprop:Generator_RowDeletingName="tiposdeevidenciasRowDeleting" msprop:Generator_RowChangingName="tiposdeevidenciasRowChanging" msprop:Generator_RowEvHandlerName="tiposdeevidenciasRowChangeEventHandler" msprop:Generator_RowDeletedName="tiposdeevidenciasRowDeleted" msprop:Generator_UserTableName="tiposdeevidencias" msprop:Generator_RowChangedName="tiposdeevidenciasRowChanged" msprop:Generator_RowEvArgName="tiposdeevidenciasRowChangeEvent" msprop:Generator_RowClassName="tiposdeevidenciasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idtipoevidencia" msprop:Generator_ColumnVarNameInTable="columnidtipoevidencia" msprop:Generator_ColumnPropNameInRow="idtipoevidencia" msprop:Generator_ColumnPropNameInTable="idtipoevidenciaColumn" msprop:Generator_UserColumnName="idtipoevidencia" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="caracteristica" msprop:Generator_ColumnVarNameInTable="columncaracteristica" msprop:Generator_ColumnPropNameInRow="caracteristica" msprop:Generator_ColumnPropNameInTable="caracteristicaColumn" msprop:Generator_UserColumnName="caracteristica" type="xs:string" minOccurs="0" />
+              <xs:element name="formato" msprop:Generator_ColumnVarNameInTable="columnformato" msprop:Generator_ColumnPropNameInRow="formato" msprop:Generator_ColumnPropNameInTable="formatoColumn" msprop:Generator_UserColumnName="formato" type="xs:string" minOccurs="0" />
+              <xs:element name="extension" msprop:Generator_ColumnVarNameInTable="columnextension" msprop:Generator_ColumnPropNameInRow="extension" msprop:Generator_ColumnPropNameInTable="extensionColumn" msprop:Generator_UserColumnName="extension" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

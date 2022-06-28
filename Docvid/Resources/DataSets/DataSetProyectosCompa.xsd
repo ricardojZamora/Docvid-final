@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetProyectosCompa" targetNamespace="http://tempuri.org/DataSetProyectosCompa.xsd" xmlns:mstns="http://tempuri.org/DataSetProyectosCompa.xsd" xmlns="http://tempuri.org/DataSetProyectosCompa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetProyectosCompa" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetProyectosCompa" msprop:Generator_UserDSName="DataSetProyectosCompa">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Proyectos" msprop:Generator_TableClassName="ProyectosDataTable" msprop:Generator_TableVarName="tableProyectos" msprop:Generator_TablePropName="Proyectos" msprop:Generator_RowDeletingName="ProyectosRowDeleting" msprop:Generator_RowChangingName="ProyectosRowChanging" msprop:Generator_RowEvHandlerName="ProyectosRowChangeEventHandler" msprop:Generator_RowDeletedName="ProyectosRowDeleted" msprop:Generator_UserTableName="Proyectos" msprop:Generator_RowChangedName="ProyectosRowChanged" msprop:Generator_RowEvArgName="ProyectosRowChangeEvent" msprop:Generator_RowClassName="ProyectosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idproyectocompartido" msprop:Generator_ColumnVarNameInTable="columnidproyectocompartido" msprop:Generator_ColumnPropNameInRow="idproyectocompartido" msprop:Generator_ColumnPropNameInTable="idproyectocompartidoColumn" msprop:Generator_UserColumnName="idproyectocompartido" type="xs:int" minOccurs="0" />
+              <xs:element name="idproyecto" msprop:Generator_ColumnVarNameInTable="columnidproyecto" msprop:Generator_ColumnPropNameInRow="idproyecto" msprop:Generator_ColumnPropNameInTable="idproyectoColumn" msprop:Generator_UserColumnName="idproyecto" type="xs:int" minOccurs="0" />
+              <xs:element name="titulo" msprop:Generator_ColumnVarNameInTable="columntitulo" msprop:Generator_ColumnPropNameInRow="titulo" msprop:Generator_ColumnPropNameInTable="tituloColumn" msprop:Generator_UserColumnName="titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="usuario_compartido" msprop:Generator_ColumnVarNameInTable="columnusuario_compartido" msprop:Generator_ColumnPropNameInRow="usuario_compartido" msprop:Generator_ColumnPropNameInTable="usuario_compartidoColumn" msprop:Generator_UserColumnName="usuario_compartido" type="xs:string" minOccurs="0" />
+              <xs:element name="usuario_propietario" msprop:Generator_ColumnVarNameInTable="columnusuario_propietario" msprop:Generator_ColumnPropNameInRow="usuario_propietario" msprop:Generator_ColumnPropNameInTable="usuario_propietarioColumn" msprop:Generator_UserColumnName="usuario_propietario" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

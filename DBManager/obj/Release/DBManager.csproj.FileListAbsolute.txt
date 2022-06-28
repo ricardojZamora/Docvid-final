@@ -1,0 +1,2 @@
+D:\proyectotesis\Docvid\DBManager\obj\Release\DBManager.csprojAssemblyReference.cache
+D:\proyectotesis\Docvid\DBManager\obj\Release\DBManager.csproj.CoreCompileInputs.cache

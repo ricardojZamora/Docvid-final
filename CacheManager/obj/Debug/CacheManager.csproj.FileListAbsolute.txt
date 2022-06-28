@@ -1,0 +1,111 @@
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\docvid proceso 3 crud\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\CacheManager.dll
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\DBManager.dll
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\DBManager.pdb
+D:\proyectotesis\Docvid\CacheManager\obj\Debug\CacheManager.csproj.CoreCompileInputs.cache
+D:\proyectotesis\Docvid\CacheManager\obj\Debug\CacheManager.csproj.CopyComplete
+D:\proyectotesis\Docvid\CacheManager\obj\Debug\CacheManager.dll
+D:\proyectotesis\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\CacheManager.dll.CodeAnalysisLog.xml
+D:\proyectotesis\Docvid\CacheManager\bin\Debug\CacheManager.dll.lastcodeanalysissucceeded
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros proceso 2\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Web.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Web.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.csproj.CopyComplete
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.pdb

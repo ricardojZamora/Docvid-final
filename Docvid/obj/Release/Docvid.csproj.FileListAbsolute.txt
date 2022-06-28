@@ -1,0 +1,9 @@
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.csprojAssemblyReference.cache
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.GUI.Administrador.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.GUI.Gestores.Auditores.agregarauditor.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.GUI.Gestores.Auditores.gestionauditores.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.login.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.Properties.Resources.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.Splahs.resources
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.csproj.GenerateResource.cache
+D:\proyectotesis\Docvid\Docvid\obj\Release\Docvid.csproj.CoreCompileInputs.cache

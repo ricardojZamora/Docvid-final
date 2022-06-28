@@ -1,0 +1,48 @@
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+D:\proyectotesis\Docvid\SessionManager\bin\Debug\SessionManager.dll
+D:\proyectotesis\Docvid\SessionManager\bin\Debug\SessionManager.pdb
+D:\proyectotesis\Docvid\SessionManager\obj\Debug\SessionManager.csproj.CoreCompileInputs.cache
+D:\proyectotesis\Docvid\SessionManager\obj\Debug\SessionManager.dll
+D:\proyectotesis\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+D:\proyectotesis\Docvid\SessionManager\bin\Debug\SessionManager.dll.CodeAnalysisLog.xml
+D:\proyectotesis\Docvid\SessionManager\bin\Debug\SessionManager.dll.lastcodeanalysissucceeded
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.pdb

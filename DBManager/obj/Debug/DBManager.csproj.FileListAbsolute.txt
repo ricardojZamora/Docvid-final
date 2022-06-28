@@ -1,0 +1,76 @@
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\DBManager\bin\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\DBManager\bin\Debug\DBManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\DBManager\obj\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\proceso 1 login y base de datos\Docvid\DBManager\obj\Debug\DBManager.pdb
+D:\proyectotesis\Docvid\DBManager\obj\Debug\DBManager.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\DBManager\bin\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\DBManager\bin\Debug\DBManager.pdb
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\DBManager\obj\Debug\DBManager.dll
+C:\Users\admin\Documents\seminario de graduacion 2021\software\splash\Docvid\DBManager\obj\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\obj\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\software\cruds y filtros\Docvid\DBManager\obj\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\obj\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\obj\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.pdb
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.csproj.CopyComplete
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.dll
+C:\Users\ricar\Desktop\Certificado\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.dll
+C:\Users\Kevin\Documents\seminario\Nueva carpeta\otros avances\Docvid proceso 12 abriendo archivos dtgv\DBManager\obj\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\DBManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\DBManager.pdb
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\itextsharp.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\itextsharp.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.dll
+C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.pdb

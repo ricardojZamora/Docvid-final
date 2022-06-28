@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D55CDF81-9E5E-4C61-B549-40DF214A95EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Docvid</RootNamespace>
+    <AssemblyName>Docvid</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libreria extra\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libreria extra\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.4.1, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libreria extra\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF5, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLS\AppManager.cs" />
+    <Compile Include="GUI\Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Administrador.Designer.cs">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\operacion terminada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\operacion terminada.Designer.cs">
+      <DependentUpon>operacion terminada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\panelprincipalpasos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\panelprincipalpasos.Designer.cs">
+      <DependentUpon>panelprincipalpasos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\Paso 7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\Paso 7.Designer.cs">
+      <DependentUpon>Paso 7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso10.Designer.cs">
+      <DependentUpon>paso10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso11.Designer.cs">
+      <DependentUpon>paso11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso12.Designer.cs">
+      <DependentUpon>paso12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso13.Designer.cs">
+      <DependentUpon>paso13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso2volatil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso2volatil.Designer.cs">
+      <DependentUpon>paso2volatil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso1principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso1principal.Designer.cs">
+      <DependentUpon>paso1principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso3.Designer.cs">
+      <DependentUpon>paso3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso4.Designer.cs">
+      <DependentUpon>paso4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso5.Designer.cs">
+      <DependentUpon>paso5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso6.Designer.cs">
+      <DependentUpon>paso6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso8.Designer.cs">
+      <DependentUpon>paso8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\algoritmo de documentacion\paso9.Designer.cs">
+      <DependentUpon>paso9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\evidencia dispositivo movil\lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\evidencia dispositivo movil\lista.Designer.cs">
+      <DependentUpon>lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\Listaescenarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\Listaescenarios.Designer.cs">
+      <DependentUpon>Listaescenarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentacion\webcam\webcam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentacion\webcam\webcam.Designer.cs">
+      <DependentUpon>webcam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Documentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Documentos.Designer.cs">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Auditores\agregarauditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Auditores\agregarauditor.Designer.cs">
+      <DependentUpon>agregarauditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Auditores\gestionauditores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Auditores\gestionauditores.Designer.cs">
+      <DependentUpon>gestionauditores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\compartirproyectos\gestionarcompartir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\compartirproyectos\gestionarcompartir.Designer.cs">
+      <DependentUpon>gestionarcompartir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\selecciontipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\selecciontipo.Designer.cs">
+      <DependentUpon>selecciontipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Evidencia\gestionevidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Evidencia\gestionevidencia.Designer.cs">
+      <DependentUpon>gestionevidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Evidencia\todas_las_evidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Evidencia\todas_las_evidencias.Designer.cs">
+      <DependentUpon>todas_las_evidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\firma digital\CLS\Cryptography.cs" />
+    <Compile Include="GUI\Gestores\firma digital\guardando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\firma digital\guardando.Designer.cs">
+      <DependentUpon>guardando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\firma digital\panelfirmaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\firma digital\panelfirmaprincipal.Designer.cs">
+      <DependentUpon>panelfirmaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\CLS\Cryptography.cs" />
+    <Compile Include="GUI\Gestores\hash\encriptar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\encriptar.Designer.cs">
+      <DependentUpon>encriptar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\hashu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\hashu.Designer.cs">
+      <DependentUpon>hashu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\seleccion llaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\hash\seleccion llaves.Designer.cs">
+      <DependentUpon>seleccion llaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\herramientas administrativas\paneladministrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\herramientas administrativas\paneladministrativo.Designer.cs">
+      <DependentUpon>paneladministrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\permisos\gestionpermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\permisos\gestionpermisos.Designer.cs">
+      <DependentUpon>gestionpermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\permisos\listadepermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\permisos\listadepermisos.Designer.cs">
+      <DependentUpon>listadepermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\proyectoscompartidos\gestorproyectoscompartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\proyectoscompartidos\gestorproyectoscompartidos.Designer.cs">
+      <DependentUpon>gestorproyectoscompartidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Proyectoss\agregarcadena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Proyectoss\agregarcadena.Designer.cs">
+      <DependentUpon>agregarcadena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Proyectoss\gestionproyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Proyectoss\gestionproyectos.Designer.cs">
+      <DependentUpon>gestionproyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\agregardocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\agregardocumento.Designer.cs">
+      <DependentUpon>agregardocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\gestiondocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Documentos\gestiondocumentos.Designer.cs">
+      <DependentUpon>gestiondocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\agregarrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\agregarrol.Designer.cs">
+      <DependentUpon>agregarrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\gestionarol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\gestionarol.Designer.cs">
+      <DependentUpon>gestionarol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\listapermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Roles\listapermisos.Designer.cs">
+      <DependentUpon>listapermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\tipo evidencias\gestiontipoevidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\tipo evidencias\gestiontipoevidencias.Designer.cs">
+      <DependentUpon>gestiontipoevidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Usuarios\agregarusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Usuarios\agregarusuario.Designer.cs">
+      <DependentUpon>agregarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Gestores\Usuarios\gestionarusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Gestores\Usuarios\gestionarusuario.Designer.cs">
+      <DependentUpon>gestionarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nuevaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\nuevaprincipal.Designer.cs">
+      <DependentUpon>nuevaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteEvidenciasp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEvidenciasp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectos1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectos1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectos2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectos2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectosComp2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectosComp2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteProyectosCompartidos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteProyectosCompartidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReporteRoles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteRoles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\ReportetipodeEvidencia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportetipodeEvidencia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Usuarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Usuarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Vista_Reportes\Reportes_sp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Reportes\Vista_Reportes\Reportes_sp.Designer.cs">
+      <DependentUpon>Reportes_sp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rol2\cadenadecustodia\proyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Rol2\cadenadecustodia\proyectos.Designer.cs">
+      <DependentUpon>proyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\cambiocontrasenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\cambiocontrasenia.Designer.cs">
+      <DependentUpon>cambiocontrasenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\informacion.Designer.cs">
+      <DependentUpon>informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\suspendermicuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Rol2\cuenta\suspendermicuenta.Designer.cs">
+      <DependentUpon>suspendermicuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Rol2\MySqlConnection.cs" />
+    <Compile Include="GUI\Rol2\MySqlDataAdapter.cs" />
+    <Compile Include="GUI\Rol2\principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Rol2\principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DataSets\DataSetEvidencias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetEvidencias1.cs">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetEvidencias1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos1.cs">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos2.cs">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectos2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectosCompa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetProyectosCompa2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetRoles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetUsuarios.cs">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DataSets\DataSetUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splahs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splahs.Designer.cs">
+      <DependentUpon>Splahs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\operacion terminada.resx">
+      <DependentUpon>operacion terminada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\panelprincipalpasos.resx">
+      <DependentUpon>panelprincipalpasos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\Paso 7.resx">
+      <DependentUpon>Paso 7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso10.resx">
+      <DependentUpon>paso10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso11.resx">
+      <DependentUpon>paso11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso12.resx">
+      <DependentUpon>paso12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso13.resx">
+      <DependentUpon>paso13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso2volatil.resx">
+      <DependentUpon>paso2volatil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso1principal.resx">
+      <DependentUpon>paso1principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso3.resx">
+      <DependentUpon>paso3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso4.resx">
+      <DependentUpon>paso4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso5.resx">
+      <DependentUpon>paso5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso6.resx">
+      <DependentUpon>paso6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso8.resx">
+      <DependentUpon>paso8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\algoritmo de documentacion\paso9.resx">
+      <DependentUpon>paso9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\evidencia dispositivo movil\lista.resx">
+      <DependentUpon>lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\Listaescenarios.resx">
+      <DependentUpon>Listaescenarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentacion\webcam\webcam.resx">
+      <DependentUpon>webcam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Documentos.resx">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Auditores\agregarauditor.resx">
+      <DependentUpon>agregarauditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Auditores\gestionauditores.resx">
+      <DependentUpon>gestionauditores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\compartirproyectos\gestionarcompartir.resx">
+      <DependentUpon>gestionarcompartir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Documentos\selecciontipo.resx">
+      <DependentUpon>selecciontipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Evidencia\gestionevidencia.resx">
+      <DependentUpon>gestionevidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Evidencia\todas_las_evidencias.resx">
+      <DependentUpon>todas_las_evidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\firma digital\guardando.resx">
+      <DependentUpon>guardando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\firma digital\panelfirmaprincipal.resx">
+      <DependentUpon>panelfirmaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\hash\encriptar.resx">
+      <DependentUpon>encriptar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\hash\hashu.resx">
+      <DependentUpon>hashu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\hash\seleccion llaves.resx">
+      <DependentUpon>seleccion llaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\herramientas administrativas\paneladministrativo.resx">
+      <DependentUpon>paneladministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\permisos\gestionpermisos.resx">
+      <DependentUpon>gestionpermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\permisos\listadepermisos.resx">
+      <DependentUpon>listadepermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\proyectoscompartidos\gestorproyectoscompartidos.resx">
+      <DependentUpon>gestorproyectoscompartidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Proyectoss\agregarcadena.resx">
+      <DependentUpon>agregarcadena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Proyectoss\gestionproyectos.resx">
+      <DependentUpon>gestionproyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Documentos\agregardocumento.resx">
+      <DependentUpon>agregardocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Documentos\gestiondocumentos.resx">
+      <DependentUpon>gestiondocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Roles\agregarrol.resx">
+      <DependentUpon>agregarrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Roles\gestionarol.resx">
+      <DependentUpon>gestionarol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Roles\listapermisos.resx">
+      <DependentUpon>listapermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\tipo evidencias\gestiontipoevidencias.resx">
+      <DependentUpon>gestiontipoevidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Usuarios\agregarusuario.resx">
+      <DependentUpon>agregarusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Gestores\Usuarios\gestionarusuario.resx">
+      <DependentUpon>gestionarusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nuevaprincipal.resx">
+      <DependentUpon>nuevaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteEvidenciasp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteEvidenciasp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectos1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectos1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectos2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectos2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectosComp2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectosComp2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteProyectosCompartidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteProyectosCompartidos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReporteRoles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteRoles.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\ReportetipodeEvidencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportetipodeEvidencia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Usuarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Usuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Reportes\Vista_Reportes\Reportes_sp.resx">
+      <DependentUpon>Reportes_sp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Rol2\cadenadecustodia\proyectos.resx">
+      <DependentUpon>proyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Rol2\cuenta\cambiocontrasenia.resx">
+      <DependentUpon>cambiocontrasenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Rol2\cuenta\informacion.resx">
+      <DependentUpon>informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Rol2\cuenta\suspendermicuenta.resx">
+      <DependentUpon>suspendermicuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Rol2\principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Splahs.resx">
+      <DependentUpon>Splahs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\DataSets\DataSetEvidencias.xsc">
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEvidencias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias.xss">
+      <DependentUpon>DataSetEvidencias.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xsc">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEvidencias1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetEvidencias1.xss">
+      <DependentUpon>DataSetEvidencias1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xsc">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectos1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos1.xss">
+      <DependentUpon>DataSetProyectos1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xsc">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectos2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectos2.xss">
+      <DependentUpon>DataSetProyectos2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xsc">
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectosCompa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa.xss">
+      <DependentUpon>DataSetProyectosCompa.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xsc">
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProyectosCompa2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetProyectosCompa2.xss">
+      <DependentUpon>DataSetProyectosCompa2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xsc">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRoles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetRoles.xss">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xsc">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUsuarios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DataSets\DataSetUsuarios.xss">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CacheManager\CacheManager.csproj">
+      <Project>{2cef0f8d-360e-442a-a1a2-2920ff565cfd}</Project>
+      <Name>CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBManager\DBManager.csproj">
+      <Project>{2bfd91e9-5a9c-4b4c-8af5-6a6f473f194e}</Project>
+      <Name>DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General\General.csproj">
+      <Project>{8aaf628e-d558-402e-ad1a-1e1fd1592225}</Project>
+      <Name>General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{682f00a8-6d66-4737-a62b-0078901104d9}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acce3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir-documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandeja-de-entrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Base_de_Datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-sharing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-apagar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mantenimiento-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-chain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-account-button-with-user-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-informe-de-estadísticas-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-someter-para-aprobacion-24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
