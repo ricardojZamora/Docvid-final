@@ -74,3 +74,15 @@ C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\bin\Debug\MySql.Data.Entity.EF6
 C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
 C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.dll
 C:\Users\Kevin\Documents\GitHub\Docvid\DBManager\obj\Debug\DBManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\DBManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\DBManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\itextsharp.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\itextsharp.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\MySql.Data.Entity.EF5.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\obj\Debug\DBManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\DBManager\obj\Debug\DBManager.pdb

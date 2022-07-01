@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace DBManager.CLS
 {
-    public class DBOperacion:DBConexion
+    public class DBOperacion
     {
+        DBConexion nueva = DBConexion.Instancia;
         public DataTable Consultar(String pConsulta)
         {
             return EjecutarConsulta(pConsulta);
@@ -31,28 +32,28 @@ namespace DBManager.CLS
         private Int32 EjecutarSentencia(String pSentencia)
         {
             Int32 FilasAfectadas = 0;
-            if (base.Conectar())
+            if (nueva.Conectar())
             {
                 MySqlCommand Comando = new MySqlCommand();
                 Comando.CommandText = pSentencia;
-                Comando.Connection = base.oConexion;
+                Comando.Connection = nueva.getConexion();
                 FilasAfectadas = Comando.ExecuteNonQuery();
-                base.Desconectar();
+                nueva.Desconectar();
             }
             return FilasAfectadas;
         }
         private DataTable EjecutarConsulta(String pConsulta)
         {
             DataTable Resultado = new DataTable();
-            if (base.Conectar())
+            if (nueva.Conectar())
             {
                 MySqlDataAdapter Adaptador = new MySqlDataAdapter();
                 MySqlCommand Comando = new MySqlCommand();
                 Comando.CommandText = pConsulta;
-                Comando.Connection = base.oConexion;
+                Comando.Connection = nueva.getConexion();
                 Adaptador.SelectCommand = Comando;
                 Adaptador.Fill(Resultado);
-                base.Desconectar();
+                nueva.Desconectar();
             }
             return Resultado;
         }

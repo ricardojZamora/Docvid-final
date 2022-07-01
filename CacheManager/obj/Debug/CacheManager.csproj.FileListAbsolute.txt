@@ -109,3 +109,16 @@ C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\bin\Debug\MySql.Data.Entity.
 C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
 C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.dll
 C:\Users\Kevin\Documents\GitHub\Docvid\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\DBManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\itextsharp.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\DBManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\itextsharp.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\CacheManager\obj\Debug\CacheManager.pdb

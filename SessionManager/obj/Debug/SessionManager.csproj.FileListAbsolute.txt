@@ -46,3 +46,11 @@ C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.dll
 C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\bin\Debug\itextsharp.xml
 C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.dll
 C:\Users\Kevin\Documents\GitHub\Docvid\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\bin\Debug\itextsharp.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\bin\Debug\itextsharp.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\obj\Debug\SessionManager.csprojResolveAssemblyReference.cache
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\SessionManager\obj\Debug\SessionManager.pdb
