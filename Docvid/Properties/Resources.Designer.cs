@@ -173,6 +173,16 @@ namespace Docvid.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap evidencia {
+            get {
+                object obj = ResourceManager.GetObject("evidencia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exclamacion {
             get {
                 object obj = ResourceManager.GetObject("exclamacion", resourceCulture);
