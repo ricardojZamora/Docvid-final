@@ -174,8 +174,8 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 568);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1093, 20);
@@ -187,7 +187,7 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
-            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvdatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgvdatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -258,6 +258,7 @@
             this.idtipoevidencia.Name = "idtipoevidencia";
             this.idtipoevidencia.ReadOnly = true;
             this.idtipoevidencia.Visible = false;
+            this.idtipoevidencia.Width = 5;
             // 
             // idproyecto
             // 
@@ -320,6 +321,7 @@
             this.dia.Name = "dia";
             this.dia.ReadOnly = true;
             this.dia.Visible = false;
+            this.dia.Width = 51;
             // 
             // mes
             // 
@@ -329,6 +331,7 @@
             this.mes.Name = "mes";
             this.mes.ReadOnly = true;
             this.mes.Visible = false;
+            this.mes.Width = 55;
             // 
             // anio
             // 
@@ -338,6 +341,7 @@
             this.anio.Name = "anio";
             this.anio.ReadOnly = true;
             this.anio.Visible = false;
+            this.anio.Width = 57;
             // 
             // hora
             // 
@@ -347,6 +351,7 @@
             this.hora.Name = "hora";
             this.hora.ReadOnly = true;
             this.hora.Visible = false;
+            this.hora.Width = 59;
             // 
             // minutos
             // 
@@ -356,6 +361,7 @@
             this.minutos.Name = "minutos";
             this.minutos.ReadOnly = true;
             this.minutos.Visible = false;
+            this.minutos.Width = 76;
             // 
             // horacorta
             // 
@@ -402,10 +408,11 @@
             // chsinfecha
             // 
             this.chsinfecha.AutoSize = true;
-            this.chsinfecha.ForeColor = System.Drawing.Color.Black;
+            this.chsinfecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chsinfecha.ForeColor = System.Drawing.Color.White;
             this.chsinfecha.Location = new System.Drawing.Point(745, 30);
             this.chsinfecha.Name = "chsinfecha";
-            this.chsinfecha.Size = new System.Drawing.Size(111, 17);
+            this.chsinfecha.Size = new System.Drawing.Size(167, 23);
             this.chsinfecha.TabIndex = 22;
             this.chsinfecha.Text = "Sin importar fecha";
             this.chsinfecha.UseVisualStyleBackColor = true;
@@ -420,7 +427,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1105, 620);
             this.Controls.Add(this.chsinfecha);
             this.Controls.Add(this.datecalendario);

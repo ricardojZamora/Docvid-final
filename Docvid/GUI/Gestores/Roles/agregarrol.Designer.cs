@@ -45,7 +45,7 @@
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(28, 39);
+            this.txtid.Location = new System.Drawing.Point(95, 25);
             this.txtid.Name = "txtid";
             this.txtid.ReadOnly = true;
             this.txtid.Size = new System.Drawing.Size(62, 20);
@@ -55,7 +55,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(46, 21);
+            this.label5.Location = new System.Drawing.Point(113, 7);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 22;
@@ -161,6 +161,7 @@
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnagregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "agregarrol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

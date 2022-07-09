@@ -46,7 +46,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(70, 272);
+            this.textBox2.Location = new System.Drawing.Point(87, 272);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(513, 20);
             this.textBox2.TabIndex = 13;
@@ -64,7 +64,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(589, 301);
+            this.button2.Location = new System.Drawing.Point(606, 299);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(25, 23);
             this.button2.TabIndex = 11;
@@ -74,7 +74,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 301);
+            this.textBox1.Location = new System.Drawing.Point(87, 301);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(513, 20);
             this.textBox1.TabIndex = 10;
@@ -97,7 +97,7 @@
             this.btncrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btncrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncrear.ForeColor = System.Drawing.Color.White;
-            this.btncrear.Location = new System.Drawing.Point(718, 272);
+            this.btncrear.Location = new System.Drawing.Point(689, 280);
             this.btncrear.Name = "btncrear";
             this.btncrear.Size = new System.Drawing.Size(75, 42);
             this.btncrear.TabIndex = 8;
@@ -110,7 +110,7 @@
             this.txtescrituraolectura.Location = new System.Drawing.Point(14, 11);
             this.txtescrituraolectura.Name = "txtescrituraolectura";
             this.txtescrituraolectura.ReadOnly = true;
-            this.txtescrituraolectura.Size = new System.Drawing.Size(776, 248);
+            this.txtescrituraolectura.Size = new System.Drawing.Size(776, 203);
             this.txtescrituraolectura.TabIndex = 7;
             this.txtescrituraolectura.Text = "";
             // 
@@ -184,7 +184,7 @@
             this.btncambiarllaves.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btncambiarllaves.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncambiarllaves.ForeColor = System.Drawing.Color.White;
-            this.btncambiarllaves.Location = new System.Drawing.Point(637, 272);
+            this.btncambiarllaves.Location = new System.Drawing.Point(689, 220);
             this.btncambiarllaves.Name = "btncambiarllaves";
             this.btncambiarllaves.Size = new System.Drawing.Size(75, 42);
             this.btncambiarllaves.TabIndex = 20;
