@@ -41,10 +41,11 @@
             this.btnbuscarpdf.FlatAppearance.BorderSize = 0;
             this.btnbuscarpdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnbuscarpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscarpdf.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarpdf.ForeColor = System.Drawing.Color.White;
-            this.btnbuscarpdf.Location = new System.Drawing.Point(193, 25);
+            this.btnbuscarpdf.Location = new System.Drawing.Point(22, 7);
             this.btnbuscarpdf.Name = "btnbuscarpdf";
-            this.btnbuscarpdf.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscarpdf.Size = new System.Drawing.Size(160, 49);
             this.btnbuscarpdf.TabIndex = 0;
             this.btnbuscarpdf.Text = "Buscar PDF";
             this.btnbuscarpdf.UseVisualStyleBackColor = false;
@@ -56,6 +57,7 @@
             this.btnfirma.FlatAppearance.BorderSize = 0;
             this.btnfirma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnfirma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfirma.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfirma.ForeColor = System.Drawing.Color.White;
             this.btnfirma.Location = new System.Drawing.Point(793, 531);
             this.btnfirma.Name = "btnfirma";
@@ -86,6 +88,7 @@
             this.btnbuscar.FlatAppearance.BorderSize = 0;
             this.btnbuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.ForeColor = System.Drawing.Color.White;
             this.btnbuscar.Location = new System.Drawing.Point(512, 532);
             this.btnbuscar.Name = "btnbuscar";

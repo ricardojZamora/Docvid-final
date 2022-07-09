@@ -38,7 +38,6 @@
             this.btnagregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtcredencial = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnagregarrol = new System.Windows.Forms.Button();
             this.lbldescripcionrol = new System.Windows.Forms.Label();
             this.Notificador = new System.Windows.Forms.ErrorProvider(this.components);
@@ -56,7 +55,7 @@
             // 
             // txtidusuarioo
             // 
-            this.txtidusuarioo.Location = new System.Drawing.Point(481, 41);
+            this.txtidusuarioo.Location = new System.Drawing.Point(154, 25);
             this.txtidusuarioo.Name = "txtidusuarioo";
             this.txtidusuarioo.ReadOnly = true;
             this.txtidusuarioo.Size = new System.Drawing.Size(62, 20);
@@ -66,7 +65,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(500, 25);
+            this.label5.Location = new System.Drawing.Point(173, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 14;
@@ -76,7 +75,7 @@
             // 
             this.lblusuario.AutoSize = true;
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(230, 25);
+            this.lblusuario.Location = new System.Drawing.Point(230, 41);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(96, 13);
             this.lblusuario.TabIndex = 13;
@@ -84,7 +83,7 @@
             // 
             // txtnombreusuario
             // 
-            this.txtnombreusuario.Location = new System.Drawing.Point(154, 41);
+            this.txtnombreusuario.Location = new System.Drawing.Point(154, 57);
             this.txtnombreusuario.Name = "txtnombreusuario";
             this.txtnombreusuario.Size = new System.Drawing.Size(249, 20);
             this.txtnombreusuario.TabIndex = 12;
@@ -138,16 +137,6 @@
             this.txtcredencial.Size = new System.Drawing.Size(249, 20);
             this.txtcredencial.TabIndex = 20;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(249, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Rol";
-            // 
             // btnagregarrol
             // 
             this.btnagregarrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -167,7 +156,7 @@
             // 
             this.lbldescripcionrol.AutoSize = true;
             this.lbldescripcionrol.ForeColor = System.Drawing.Color.White;
-            this.lbldescripcionrol.Location = new System.Drawing.Point(53, 164);
+            this.lbldescripcionrol.Location = new System.Drawing.Point(232, 174);
             this.lbldescripcionrol.Name = "lbldescripcionrol";
             this.lbldescripcionrol.Size = new System.Drawing.Size(74, 13);
             this.lbldescripcionrol.TabIndex = 31;
@@ -245,7 +234,7 @@
             // txtidrolss
             // 
             this.txtidrolss.FormattingEnabled = true;
-            this.txtidrolss.Location = new System.Drawing.Point(486, 236);
+            this.txtidrolss.Location = new System.Drawing.Point(472, 236);
             this.txtidrolss.Name = "txtidrolss";
             this.txtidrolss.Size = new System.Drawing.Size(121, 21);
             this.txtidrolss.TabIndex = 36;
@@ -274,7 +263,6 @@
             this.Controls.Add(this.lbldescripcionrol);
             this.Controls.Add(this.btnagregarrol);
             this.Controls.Add(this.txtidrol);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtcredencial);
             this.Controls.Add(this.btncancelar);
@@ -307,7 +295,6 @@
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtcredencial;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnagregarrol;
         public System.Windows.Forms.Label lbldescripcionrol;
         private System.Windows.Forms.ErrorProvider Notificador;

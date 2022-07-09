@@ -86,7 +86,7 @@
             // 
             // txtidpermiso
             // 
-            this.txtidpermiso.Location = new System.Drawing.Point(258, 2);
+            this.txtidpermiso.Location = new System.Drawing.Point(243, 3);
             this.txtidpermiso.Name = "txtidpermiso";
             this.txtidpermiso.ReadOnly = true;
             this.txtidpermiso.Size = new System.Drawing.Size(100, 20);
@@ -121,11 +121,11 @@
             // lblidrol
             // 
             this.lblidrol.ForeColor = System.Drawing.Color.White;
-            this.lblidrol.Location = new System.Drawing.Point(33, 2);
+            this.lblidrol.Location = new System.Drawing.Point(33, 5);
             this.lblidrol.Name = "lblidrol";
             this.lblidrol.Size = new System.Drawing.Size(198, 23);
             this.lblidrol.TabIndex = 6;
-            this.lblidrol.Text = "label1";
+            this.lblidrol.Text = "ID";
             this.lblidrol.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblidrol.Visible = false;
             // 
@@ -142,6 +142,7 @@
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstdatos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "listadepermisos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista de permisos";

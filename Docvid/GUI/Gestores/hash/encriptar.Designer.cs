@@ -66,7 +66,7 @@
             this.btnEncrypt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnEncrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEncrypt.ForeColor = System.Drawing.Color.White;
-            this.btnEncrypt.Location = new System.Drawing.Point(545, 480);
+            this.btnEncrypt.Location = new System.Drawing.Point(319, 486);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(75, 23);
             this.btnEncrypt.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             // txtdescencriptar
             // 
-            this.txtdescencriptar.Location = new System.Drawing.Point(129, 213);
+            this.txtdescencriptar.Location = new System.Drawing.Point(119, 213);
             this.txtdescencriptar.Multiline = true;
             this.txtdescencriptar.Name = "txtdescencriptar";
             this.txtdescencriptar.Size = new System.Drawing.Size(609, 261);
@@ -118,7 +118,7 @@
             this.btnDecrypt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnDecrypt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDecrypt.ForeColor = System.Drawing.Color.White;
-            this.btnDecrypt.Location = new System.Drawing.Point(655, 480);
+            this.btnDecrypt.Location = new System.Drawing.Point(429, 486);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(83, 23);
             this.btnDecrypt.TabIndex = 7;

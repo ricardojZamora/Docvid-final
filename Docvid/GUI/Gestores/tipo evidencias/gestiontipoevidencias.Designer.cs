@@ -158,6 +158,7 @@
             this.dtgvdatos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
             this.dtgvdatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvdatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -170,7 +171,7 @@
             this.dtgvdatos.Name = "dtgvdatos";
             this.dtgvdatos.ReadOnly = true;
             this.dtgvdatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvdatos.Size = new System.Drawing.Size(699, 513);
+            this.dtgvdatos.Size = new System.Drawing.Size(699, 397);
             this.dtgvdatos.TabIndex = 20;
             // 
             // idtipoevidencia
@@ -226,7 +227,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(772, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 16);
@@ -236,7 +238,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(772, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 16);
@@ -253,7 +256,8 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(737, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 16);
@@ -271,8 +275,9 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(737, 275);
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(737, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 18);
             this.label4.TabIndex = 28;
@@ -282,15 +287,16 @@
             // txtformato
             // 
             this.txtformato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtformato.Location = new System.Drawing.Point(737, 296);
+            this.txtformato.Location = new System.Drawing.Point(737, 288);
             this.txtformato.Name = "txtformato";
             this.txtformato.Size = new System.Drawing.Size(100, 22);
             this.txtformato.TabIndex = 27;
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(737, 351);
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(737, 340);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 18);
             this.label5.TabIndex = 30;
@@ -300,20 +306,25 @@
             // txtextension
             // 
             this.txtextension.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtextension.Location = new System.Drawing.Point(737, 372);
+            this.txtextension.Location = new System.Drawing.Point(737, 361);
             this.txtextension.Name = "txtextension";
             this.txtextension.Size = new System.Drawing.Size(100, 22);
             this.txtextension.TabIndex = 29;
             // 
             // btnagregar
             // 
+            this.btnagregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnagregar.FlatAppearance.BorderSize = 0;
+            this.btnagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnagregar.Location = new System.Drawing.Point(748, 424);
+            this.btnagregar.ForeColor = System.Drawing.Color.White;
+            this.btnagregar.Location = new System.Drawing.Point(751, 389);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregar.Size = new System.Drawing.Size(75, 33);
             this.btnagregar.TabIndex = 31;
             this.btnagregar.Text = "Agregar";
-            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.UseVisualStyleBackColor = false;
             this.btnagregar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // btncancelar

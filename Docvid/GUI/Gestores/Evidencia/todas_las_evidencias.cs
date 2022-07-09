@@ -351,6 +351,11 @@ namespace Docvid.GUI.Gestores.Evidencia
             }
         }
 
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
         /*FIN DE LA INSPECCION DE ARCHIVOS CON HASH*/
 
 

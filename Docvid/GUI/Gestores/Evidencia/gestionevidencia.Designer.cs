@@ -64,7 +64,7 @@
             // 
             this.dtgvdatos.AllowUserToAddRows = false;
             this.dtgvdatos.AllowUserToDeleteRows = false;
-            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvdatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvdatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvdatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.dtgvdatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -164,6 +164,7 @@
             this.dia.Name = "dia";
             this.dia.ReadOnly = true;
             this.dia.Visible = false;
+            this.dia.Width = 51;
             // 
             // mes
             // 
@@ -173,6 +174,7 @@
             this.mes.Name = "mes";
             this.mes.ReadOnly = true;
             this.mes.Visible = false;
+            this.mes.Width = 55;
             // 
             // anio
             // 
@@ -182,6 +184,7 @@
             this.anio.Name = "anio";
             this.anio.ReadOnly = true;
             this.anio.Visible = false;
+            this.anio.Width = 57;
             // 
             // hora
             // 
@@ -191,6 +194,7 @@
             this.hora.Name = "hora";
             this.hora.ReadOnly = true;
             this.hora.Visible = false;
+            this.hora.Width = 59;
             // 
             // minutos
             // 
@@ -200,6 +204,7 @@
             this.minutos.Name = "minutos";
             this.minutos.ReadOnly = true;
             this.minutos.Visible = false;
+            this.minutos.Width = 76;
             // 
             // fechacorta
             // 
