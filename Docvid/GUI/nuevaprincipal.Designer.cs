@@ -61,7 +61,6 @@
             this.btnadministrardocumentos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelprincipal = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panelbotones.SuspendLayout();
@@ -125,7 +124,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox11.BackColor = System.Drawing.Color.White;
             this.pictureBox11.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox11.Image = global::Docvid.Properties.Resources.icons8_mantenimiento_50;
             resources.ApplyResources(this.pictureBox11, "pictureBox11");
@@ -134,7 +133,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
             this.pictureBox10.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox10.Image = global::Docvid.Properties.Resources.key_chain;
             resources.ApplyResources(this.pictureBox10, "pictureBox10");
@@ -143,7 +142,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox9.Image = global::Docvid.Properties.Resources.round_account_button_with_user_inside;
             resources.ApplyResources(this.pictureBox9, "pictureBox9");
@@ -152,7 +151,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
             this.pictureBox8.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox8.Image = global::Docvid.Properties.Resources.group;
             resources.ApplyResources(this.pictureBox8, "pictureBox8");
@@ -161,7 +160,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox7.Image = global::Docvid.Properties.Resources.archive;
             resources.ApplyResources(this.pictureBox7, "pictureBox7");
@@ -170,7 +169,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox6.Image = global::Docvid.Properties.Resources.delivery;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
@@ -179,7 +178,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox5.Image = global::Docvid.Properties.Resources.file_sharing;
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
@@ -188,7 +187,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox3.Image = global::Docvid.Properties.Resources.bandeja_de_entrada;
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
@@ -197,7 +196,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = global::Docvid.Properties.Resources.Icon1;
             this.pictureBox2.Image = global::Docvid.Properties.Resources.abrir_documento;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
@@ -372,7 +371,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Name = "panel1";
             this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             // 
@@ -382,11 +380,6 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
             // 
             // panelprincipal
             // 
@@ -404,7 +397,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(61)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panelprincipal);
             this.Controls.Add(this.panelbotones);
@@ -445,7 +438,6 @@
         public System.Windows.Forms.Button btnusuarios;
         public System.Windows.Forms.Button btnpermisos;
         public System.Windows.Forms.Button btnfirmadigital;
-        private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel panelprincipal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;

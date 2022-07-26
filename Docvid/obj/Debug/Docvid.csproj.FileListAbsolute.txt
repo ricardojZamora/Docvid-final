@@ -1076,3 +1076,7 @@ C:\Users\ricar\Documents\Docvid-final\Docvid\bin\Debug\CircularProgressBar.dll
 C:\Users\ricar\Documents\Docvid-final\Docvid\bin\Debug\WinFormAnimation.dll
 C:\Users\ricar\Documents\Docvid-final\Docvid\bin\Debug\CircularProgressBar.xml
 C:\Users\ricar\Documents\Docvid-final\Docvid\bin\Debug\WinFormAnimation.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\Docvid\bin\Debug\CircularProgressBar.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\Docvid\bin\Debug\WinFormAnimation.dll
+C:\Users\kevin\Documents\GitHub\Docvid-final\Docvid\bin\Debug\CircularProgressBar.xml
+C:\Users\kevin\Documents\GitHub\Docvid-final\Docvid\bin\Debug\WinFormAnimation.xml
